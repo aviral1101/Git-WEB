@@ -14,40 +14,227 @@
 
 <body>
   <div class="intro">
-    <h1 >LET US GIT</h1>
-
-
-  </div>
-    <nav class="nav  ">
-      <div class ="navigation"  >
-
-      <ul class="nav flex-column nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Introduction</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Basic-Terminology</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Work-Flow</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Getting-Started</a>
-        </li>
+    <h1>GETTING STARTED WITH GIT</h1>
   </div>
 
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#"></a>
+  <div class="navigation">
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item ">
+        <a class="nav-link active" data-toggle="tab" href="">Introduction</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Introduction</a>
+        <a class="nav-link active" data-toggle="tab" href="#">Basic-Terminology</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Introduction</a>
-      </li> -->
+        <a class="nav-link active" data-toggle="tab" href="#">Work-Flow</a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Commands and their Functions</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="content">
+    <h2>What is Version Control?</h2>
+    <p>Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book, you will use software source code as the files being version controlled, though
+      in reality you can do this with nearly any type of file on a computer.</p>
+    <h5>Types Of Version Control:-</h5>
+    <p>There are two main types of version control system models:</p>
+    <ul>
+      <li>Centralized Version Control System</li>
+      <li>Distributed Version Control System</li>
+    </ul>
+    <p>The centralized model - all users connect to a central, master repository <br>
+      <img class="img1" src="images/Presentation1.jpg" alt=""> <br>
+      The distributed model - each user has the entire repository on their computer<br> <img height="250px" width="250px" src="images/dVSC.png" alt="">
+    </p>
+    <h6 class="spl">GIT is Distributed VCS type.</h6>
+    <br><br>
+    <h2>Basic Terminology</h2><br>
+    <h5>Commit</h5>
+    <p>Git thinks of its data like a set of snapshots of a mini filesystem. Every time you commit (save the state of your project in Git), it basically takes a picture of what all your files look like at that moment and stores a reference to that
+      snapshot. You can think of it as a save point in a game - it saves your project's files and any information about them.</p>
+    <h5>Repository</h5>
+    <p>A repository is a directory which contains your project work, as well as a few files (hidden by default on Mac OS X) which are used to communicate with Git. Repositories can exist either locally on your computer or as a remote copy on another
+      computer. A repository is made up of commits.</p>
+    <h5>Working Directory</h5>
+    <p>The Working Directory is the files that you see in your computer's file system. When you open your project files up on a code editor, you're working with files in the Working Directory.When working with Git, the Working Directory is also
+      different from the command line's concept of the current working directory which is the directory that your shell is "looking at" right now.</p>
+    <h5>Checkout</h5>
+    <p>A checkout is when content in the repository has been copied to the Working Directory.</p>
+    <h5>Staging Area / Staging Index </h5>
+
+    <p>A file in the Git directory that stores information about what will go into your next commit. You can think of the staging area as a prep table where Git will take the next commit. Files on the Staging Index are poised to be added to the
+      repository.</p>
+    <h5>SHA</h5>
+    <p>A SHA is basically an ID number for each commit.<br /> Example:1d8e15a834a2157fe7af04421c42a893e8a1f23a</p>
+    <h5>Branch</h5>
+    <p>A branch is when a new line of development is created that diverges from the main line of development. This alternative line of development can continue without altering the main line.</p>
+    <h2>Work-Flow</h2><br><br>
+        <img class="gif" src="images/Presentation.gif" alt="">
+    <br><br><br>
+    <h2>Getting Started</h2>
+    <h5>Few basic commands</h5>
+    <ul>
+      <li>pwd -> used to determine working directory</li>
+      <li>ls -> used to list files and directories</li>
+      <li>mkdir -> used to create a new directory (it creates a new folder)</li>
+      <li>cd -> used to change directories</li>
+      <li>rm -> used to remove files and directories</li>
     </ul>
 
-  </nav>
+    <h4>Git Init</h4>
+    <div class="com1">
+      $ git init
+
+    </div>
+    <p>Running the git init command sets up all of the necessary files and directories that Git will use to keep track of everything. All of these files are stored in a directory called .git</p>
+    <h6>Use the git init command to create a new, empty repository in the current directory</h6>
+<br>
+    <h4>Git Clone</h4>
+    <div class="com1">
+      $ git clone https://github.com/.......
+    </div>
+    <p>git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.</p>
+    <h6>The git clone command copies an existing Git repository.</h6>
+    <br>
+
+    <h4>Git Status</h4>
+    <div class="com1">
+      $ git status
+    </div>
+    <p>The git status is our key to the mind of Git. It will tell us what Git is thinking and the state of our repository as Git sees it</p>
+    <h6>The git status command will display a lot of information depending on the state of your files, the working directory, and the repository.</h6>
+    <br>
+    <h3 class="spl1">Staging Files</h3><br><br>
+    <img class="gif" src="images/gif.gif" alt=""><br><br><br><br>
+    <h4>Git Add</h4>
+    <div class="com1">
+      $ git add index.html
+    </div>
+    <p>The git add command is used to move files from the Working Directory to the Staging Index</p>
+    <h6>Running the git add command produces no output</h6>
+    <p>Git Add can be used to add files individually </p>
+    <h6>Eg: $ git add index.html styles.css</h6><br>
+    <h4>To add all the files we use </h4>
+    <h4>Period (.)</h4>
+    <p>The period refers to the current directory and can be used as a shortcut to refer to all files and directories (including all nested files and directories!).</p>
+    <h5>Eg: $ git add . <br> </h5>
+    <p> It is equivalent previously used git add</p>
+    <br>
+
+
+    <h4>Git commit</h4>
+    <div class="com1">
+      $ git commit -m "Initial Commit"
+    </div>
+    <p>NOTE: Initial Commit is just for explanation any other commit can be used</p>
+
+    <h6>The git commit command takes files from the Staging Index and saves them in the repository.</h6>
+    <br>
+    <h4>Git Diff</h4>
+    <div class="com1">
+      $ git diff
+    </div>
+    <p>The git diff command can be used to see changes that have been made but haven't been committed, yet.</p>
+    <p>This command displays:</p>
+    <ul>
+       <li>the files that have been modified</li>
+       <li>the location of the lines that have been added/removed</li>
+       <li>the actual changes that have been made</li>
+    </ul>
+    <br>
+    <h4>Git Branch</h4>
+    <div class="com1">
+      $ git branch
+    </div>
+    <p>It can be used to:</p>
+    <ul>
+      <li>list all branch names in the repository</li>
+      <li>create new branches</li>
+      <li>delete branches</li>
+    </ul>
+    <h6>The git branch command is used to interact with Git's branches</h6>
+    <br>
+    <h4>Creating a Branck</h4>
+    <div class="com1">
+      $ git branch first_branch
+    </div>
+    <p>To create a branch, all you have to do is use git branch and provide it the name of the branch you want it to create</p>
+    <br>
+    <h4>Git checkout</h4>
+    <div class="com1">
+      $ git checkout first_branch
+    </div>
+    <p>Running this command will:</p>
+    <ul>
+      <li>remove all files and directories from the Working Directory that Git is tracking</li>
+      <li>go into the repository and pull out all of the files and directories of the commit that the branch points to</li>
+    </ul>
+    <br>
+    <h4>Git Log</h4>
+    <div class="com1">
+      $ git log --oneline
+    </div>
+    <p>The branch information in the command prompt is helpful, but the clearest way to see it is by looking at the output of git log.</p>
+    <br>
+    <h4>Deleting A Branch</h4>
+    <div class="com1">
+      $ git branch -D first_branch
+    </div>
+    <p>For this to work we must not be in the branch that we are deleting .So remember to change branch before deleting.</p>
+    <h6></h6>
+
+    <br>
+
+    <h4>Git Merging</h4>
+    <div class="com1">
+      $ git merge (name-of-branch-to-merge-in)
+    </div>
+    <p>Combining branches together is called merging.</p>
+    <p>Git can automatically merge the changes on different branches together. This branching and merging ability is what makes Git incredibly powerful!</p>
+    <p>When a merge happens, Git will:</p>
+    <ul>
+      <li>look at the branches that it's going to merge</li>
+      <li>look back along the branch's history to find a single commit that both branches have in their commit history</li>
+      <li>combine the lines of code that were changed on the separate branches together</li>
+      <li>makes a commit to record the merge</li>
+    </ul>
+    <h4>Modifying Changes</h4>
+    <br>
+    <h5>Changing Last Commit</h5>
+    <div class="com1">
+      $ git commit --amend
+    </div>
+    <p>If your Working Directory is clean (meaning there aren't any uncommitted changes in the repository), then running git commit --amend will let you provide a new commit message.</p>
+  <p>Alternatively, git commit --amend will let you include files (or changes to files) you might've forgotten to include</p>
+  <br>
+    <h5>Git Revert</h5>
+    <div class="com1">
+      $ git revert (SHA-of-commit-to-revert)
+    </div>
+    <p>The git revert command is used to reverse a previously made commit</p>
+    <ul>
+      <li>will undo the changes that were made by the provided commit</li>
+      <li>creates a new commit to record the change</li>
+    </ul>
+
+  </div>
+
+
+
+
+
+
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

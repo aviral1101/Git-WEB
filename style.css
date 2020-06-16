@@ -1,17 +1,73 @@
 /* heading div-tag */
+body{
+  background-color: #f4f4f4;
+}
 .intro{
   width:100%;
   height: 15%;
   text-align: center;
+  background-color: #888888;
 
 }
 
-
-
-
-/* navigation bar css */
+.nav-pills .nav-link{
+  background-color: pink;
+}
 .navigation{
+position: fixed;
   height: 100%;
-  width: 15%;
 
+  margin-left: 5px;
+  background-color: #dae1e7;
+  text-align: justify;
+  width: 23%;
+}
+
+
+li{
+  margin-bottom: 10px;
+}
+
+h2{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.spl{
+  text-align: center;
+}
+.spl1{
+  text-align: center;
+}
+
+
+.content{
+  position: absolute;
+  margin-left: 340px;
+  margin-top: 50px;
+  margin-right: 20px;
+
+}
+.img1{
+  height: 250px;
+  width: 250px;
+}
+.video{
+
+margin-left: 160px;
+}
+
+.com1{
+  border-style: outset;
+  /* border: 1px solid grey; */
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 350px;
+  border-color: #84a9ac;
+}
+.gif{
+  margin-left: 160px;
+   height: 300px;
+   width: 600px;
 }
