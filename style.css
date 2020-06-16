@@ -1,4 +1,14 @@
+html{
+  scroll-behavior: smooth;
+}
 /* heading div-tag */
+hr{
+  border-style: dotted none none;
+  border-color: grey;
+  border-width: 6px;
+  width:4%;
+  margin: 100px auto;
+}
 body{
   background-color: #f4f4f4;
 }
