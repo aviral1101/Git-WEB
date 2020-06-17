@@ -1,27 +1,32 @@
 
 body{
-  background-color: #f4f4f4;
+  background-color: #f0f5f9;
   margin: 0;
 
 }
 .header{
 
-  width:75%;
+  width:80%;
   height: 10%;
-  background-color: #888888;
+  background-color: #11999e;
   text-align: center;
-  margin-left: 25.5%;
+  margin-left: 20%;
   padding: 0.5%;
 
+
+
+}
+.heading{
+  color: white;
 }
 .navigation{
   position: fixed;
   top: 0;
   height: 100%;
   margin-left: 0.1px;
-  background-color: #dae1e7;
+  background-color: #d6e6f2;
   text-align: left;
-  width: 25%;
+  width: 20%;
 
 }
 
@@ -46,13 +51,15 @@ body{
 
 .bottom-container{
   position: relative;
-  background-color: #66bfbf;
+  background-color:  #52616b;
   text-align: center;
   padding-bottom: 10px;
   padding-top: 30px;
   bottom: 0;
 
-
+}
+.bottom{
+  color: white;
 }
 .footer-link{
   padding-left: 30px;
