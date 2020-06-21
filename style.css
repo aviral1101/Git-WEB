@@ -16,6 +16,7 @@ body{
 
 
 }
+
 .heading{
   color: white;
 }
@@ -39,15 +40,14 @@ body{
 }
 
 .img{
-  width: 70%;
-  margin: 100px auto 100px auto;
-  text-align: left;
+  background-color: #ddf3f5;
 }
-.img1{
+/* .img1{
+  position:relative;
   height: 250px;
   width: 250px;
-
-}
+  margin-left: 30%;
+} */
 
 .bottom-container{
   position: relative;
@@ -97,28 +97,21 @@ h2{
   text-align: center;
 }
 
-
-
-
-.img3{
-  height: 250px;
-  width: 250px;
-
-
-}
 .com1{
   border-style: outset;
   /* border: 1px solid grey; */
   border-radius: 5px;
   padding-left: 10px;
   width: 350px;
-  border-color: #84a9ac;
+  background-color: #ffc38b;
+
 }
+
 .sha{
   text-indent: 40px;
 }
 .gif{
-  margin-left: 160px;
+  margin-left: 17%;
    height: 300px;
    width: 600px;
 }

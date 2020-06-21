@@ -1,0 +1,30 @@
+<nav class="navbar bg-light">
+  <ul class="navbar-nav"><br>
+    <li class="nav-item ">
+      <a class="nav-link active" href="#First">Introduction</a></li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#second">Basic-Terminology</a> </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#third">Work-Flow</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commands and Their Function  </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#fourth">Basic-Commands</a>
+        <a class="dropdown-item" href="#five">Git-Init</a>
+        <a class="dropdown-item" href="#six">Git-Clone</a>
+        <a class="dropdown-item" href="#eight">Git-Add</a>
+        <a class="dropdown-item" href="#staging">Staging-Index</a>
+        <a class="dropdown-item" href="#eight">Git-Add</a>
+        <a class="dropdown-item" href="#nine">Git-Commit</a>
+        <a class="dropdown-item" href="#ten">Git-Diff</a>
+        <a class="dropdown-item" href="#eleven">Git-Branch</a>
+        <a class="dropdown-item" href="#twelve">Creating-Branch</a>
+        <a class="dropdown-item" href="#thirteen">Git-Checkout</a>
+        <a class="dropdown-item" href="#fourteen">Git-Log</a>
+        <a class="dropdown-item" href="#fifteen">Delete-Branch</a>
+        <a class="dropdown-item" href="#sixteen">Git-Merge</a>
+        <a class="dropdown-item" href="#seventeen">Modifying-Changes</a>
+      </div>
+    </li>
+  </ul>
+</nav>
